@@ -3,7 +3,7 @@ package com.kinomo.My;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Emp {
+public class Emp { //create class, describe parameters, create constructor, getters, setters.
 
     @SerializedName("id")
     @Expose

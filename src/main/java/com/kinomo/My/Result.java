@@ -1,5 +1,6 @@
 package com.kinomo.My;
 
+import java.util.Iterator;
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -16,6 +17,10 @@ public class Result {
 
     public void setEmp(List<Emp> emp) {
         this.emp = emp;
+    }
+
+    public Iterator<Emp> iterator() {
+        return null;
     }
 
 }
