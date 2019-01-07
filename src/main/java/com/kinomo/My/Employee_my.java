@@ -1,4 +1,4 @@
-package com.kinomo;
+package com.kinomo.My;
 
 public class Employee_my {
     private String firstname;
