@@ -13,27 +13,39 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
         Gson gson = new Gson(); //
-        BufferedReader br = new BufferedReader(new FileReader("emp.json"));
-        Result result = gson.fromJson(br, Result.class);
+        BufferedReader br = new BufferedReader(new FileReader("emp.json")); //
+        Result result = gson.fromJson(br, Result.class); //result.class - указываю во что преобразовать json
 
+
+        result.getEmp().sort(new SalaryComparator());
+
+        result.getEmp().stream()
+                .filter(emp -> emp.getCity().equals("Luninets"))
+                .forEach(emp -> System.out.println(emp.getId() + "-" + emp.getFirstname() + "-" + emp.getAge() + "-" + emp.getCity() + "-" + emp.getSalary()));
+
+        //printlist(result);
+
+
+        /* hasnext()- проверяет, есть ли следующий элемент в списке(в интерфейсе list). Можно использовать для вывода всех
+        элементов списка: цикл будет выполняться до тех пор, пока есть следующий элемент в коллекции.
+          next- ;
+          remove- ;*/
+    }
+
+    public static void printlist(Result result){
         if (result != null) { //если
             for (Emp emp : result.getEmp()) {
                 System.out.println(emp.getId() + "-" + emp.getFirstname() + "-" + emp.getAge() + "-" + emp.getCity() + "-" + emp.getSalary());
             }
         }
-        Iterator<Emp> iterator = result.iterator();
-        /* hasnext()- проверяет, есть ли следующий элемент в списке(в интерфейсе list). Можно использовать для вывода всех
-        элементов списка: цикл будет выполняться до тех пор, пока есть следующий элемент в коллекции.
-          next- ;
-          remove- ;*/
-        while (iterator.hasNext());
-        System.out.println(iterator.next());
     }
+
+        //вывести уникальный город, в цикле: если есть такой город, то print.
 }
 //            }
-//        }
-//    }
-//}
+////        }
+////    }
+////}
 
 
 

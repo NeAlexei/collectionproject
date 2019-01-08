@@ -9,7 +9,7 @@ public class Result {
 
     @SerializedName("Emp")
     @Expose
-    private List<Emp> emp = null;
+    private List<Emp> emp;
 
     public List<Emp> getEmp() {
         return emp;
@@ -17,10 +17,6 @@ public class Result {
 
     public void setEmp(List<Emp> emp) {
         this.emp = emp;
-    }
-
-    public Iterator<Emp> iterator() {
-        return null;
     }
 
 }

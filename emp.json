@@ -3,70 +3,70 @@
   [
     {
       "id": 1,
-      "firsname": "John",
+      "firstname": "John",
       "age": 21,
       "city": "Detroit",
       "salary": 1200
     },
     {
       "id": 2,
-      "firsname": "Peter",
+      "firstname": "Peter",
       "age": 22,
       "city": "Washington",
       "salary": 1500
     },
     {
       "id": 3,
-      "firsname": "Victor",
+      "firstname": "Victor",
       "age": 20,
       "city": "Franklin",
       "salary": 1000
     },
     {
       "id": 4,
-      "firsname": "Zurab-Ibn-Al-Halif",
+      "firstname": "Zurab-Ibn-Al-Halif",
       "age": 26,
       "city": "Dubai",
       "salary": 7000
     },
     {
       "id": 5,
-      "firsname": "Jack",
+      "firstname": "Jack",
       "age": 19,
       "city": "Springfield",
       "salary": 1100
     },
     {
       "id": 6,
-      "firsname": "Frank",
+      "firstname": "Frank",
       "age": 19,
       "city": "Bristol",
       "salary": 860
     },
     {
       "id": 7,
-      "firsname": "Boris",
+      "firstname": "Boris",
       "age": 43,
       "city": "Washington",
       "salary": 6800
     },
     {
       "id": 8,
-      "firsname": "Abram",
+      "firstname": "Abram",
       "age": 54,
       "city": "Greenville",
       "salary": 18000
     },
     {
       "id": 9,
-      "firsname": "Grisha",
+      "firstname": "Grisha",
       "age": 34,
       "city": "Luninets",
       "salary": 14000
     },
     {
       "id": 10,
-      "firsname": "Valeron",
+      "firstname": "Valeron",
       "age": 28,
       "city": "Zhlobin",
       "salary": 20000
