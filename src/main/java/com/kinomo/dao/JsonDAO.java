@@ -2,12 +2,13 @@ package com.kinomo.dao;
 
 import com.kinomo.model.User;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 public class JsonDAO implements DAO {
 
-    private static List<User> users;
+    private static List<User> users = new ArrayList<>();
 
     public JsonDAO() {
         if (users == null) {
