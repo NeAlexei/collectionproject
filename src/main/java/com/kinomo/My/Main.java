@@ -5,6 +5,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -14,8 +15,7 @@ public class Main {
 
         Gson gson = new Gson(); //
         BufferedReader br = new BufferedReader(new FileReader("emp.json")); //
-        Result result = gson.fromJson(br, Result.class); //result.class - указываю во что преобразовать json
-
+        Result result = gson.fromJson(br, Result.class); //result.class - во что преобразовать json
 
         result.getEmp().sort(new SalaryComparator());
 
