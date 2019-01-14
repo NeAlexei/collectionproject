@@ -9,9 +9,11 @@ public class DAOFactory {
             case JSON:
                 dao = new JsonDAO();
                 break;
+
             case DATABASE:
                 dao = new DatabaseDAO();
                 break;
+
             default:
                 dao = new JsonDAO();
                 break;
