@@ -31,9 +31,8 @@ public class JsonDAO implements DAO {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        Users usersJson = gson.fromJson(br, Users.class); //
+        Users usersJson = gson.fromJson(br, Users.class); //br - прочитанный из emp.Json, мапим на класс Users.class, т.е. указываем
         users = usersJson.getUser();
-
     }
 
     @Override
