@@ -28,6 +28,7 @@ public class JsonDAO implements DAO {
             e.printStackTrace();
         }
         UsersJson usersJson = gson.fromJson(br, UsersJson.class); //br - прочитанный из emp.Json, мапим на класс UsersJson.class
+
         users = usersJson.getListUser();
 
 //        users = gson.fromJson(br, new TypeToken<List<User>>(){}.getType());
