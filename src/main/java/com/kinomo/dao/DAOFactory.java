@@ -22,7 +22,7 @@ public class DAOFactory {
         return dao;
     }
 
-    public enum DAOKeys {
+    public enum DAOKeys { //enum - конечный набор конкретных объектов.
         JSON,
         DATABASE
     }

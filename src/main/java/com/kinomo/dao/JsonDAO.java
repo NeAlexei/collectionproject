@@ -1,24 +1,20 @@
 package com.kinomo.dao;
 
 import com.google.gson.Gson;
-import com.kinomo.My.Result;
 import com.kinomo.model.User;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 public class JsonDAO implements DAO {
 
-    private List<User> users ;
+    private List<User> users;
 
     public JsonDAO() {
-
             initialize();
-
     }
 
     @Override
@@ -31,18 +27,28 @@ public class JsonDAO implements DAO {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        Users usersJson = gson.fromJson(br, Users.class); //br - прочитанный из emp.Json, мапим на класс Users.class, т.е. указываем
-        users = usersJson.getUser();
+        UsersJson usersJson = gson.fromJson(br, UsersJson.class); //br - прочитанный из emp.Json, мапим на класс UsersJson.class
+        users = usersJson.getListUser();
+
+//        users = gson.fromJson(br, new TypeToken<List<User>>(){}.getType());
+
     }
 
     @Override
     public User getById(int id) {
+
+//        for (User specificUser : usersJson) {
+//            if (id == specificUser.getId()) {
+//                System.out.println(specificUser.getFirstname() + specificUser.getAge());
+//            return specificUser;
+//            }
+//        }
         return null;
     }
 
     @Override
     public List<User> getAll() {
-        return null;
+        return users;
     }
 
     @Override

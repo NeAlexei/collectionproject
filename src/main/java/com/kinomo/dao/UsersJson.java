@@ -2,23 +2,22 @@ package com.kinomo.dao;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import com.kinomo.My.Emp;
 import com.kinomo.model.User;
 
 import java.util.List;
 
-public class Users {
+public class UsersJson {
 
     @SerializedName("Emp")
     @Expose
-    private List<User> user;
+    private List<User> people;
 
-    public List<User> getUser() {
-        return user;
+    public List<User> getListUser() {
+        return people;
     }
 
-    public void setUser(List<User> user) {
-        this.user = user;
+    public void setUser(List<User> people) {
+        this.people = people;
     }
 
 }
