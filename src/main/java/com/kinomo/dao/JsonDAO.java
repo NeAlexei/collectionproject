@@ -40,7 +40,7 @@ public class JsonDAO implements DAO {
 
 //        for (User specificUser : usersJson) {
 //            if (id == specificUser.getId()) {
-//                System.out.println(specificUser.getFirstname() + specificUser.getAge());
+//                System.out.println(specificUser.getFirstname());
 //            return specificUser;
 //            }
 //        }
@@ -54,6 +54,10 @@ public class JsonDAO implements DAO {
 
     @Override
     public Map<String, List<User>> getUnique() {
+        /*
+
+        */
+
         return null;
     }
 }
