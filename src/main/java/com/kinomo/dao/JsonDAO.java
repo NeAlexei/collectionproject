@@ -31,19 +31,17 @@ public class JsonDAO implements DAO {
 
         users = usersJson.getListUser();
 
-//        users = gson.fromJson(br, new TypeToken<List<User>>(){}.getType());
-
     }
 
     @Override
     public User getById(int id) {
 
-//        for (User specificUser : usersJson) {
-//            if (id == specificUser.getId()) {
-//                System.out.println(specificUser.getFirstname());
-//            return specificUser;
-//            }
-//        }
+        for (User specificUser : users) {
+            if (id == specificUser.getId()) {
+                System.out.println("Name according to Id is: " + specificUser.getFirstname() + "\n" + "City according to Id is: " + specificUser.getCity());
+            return specificUser;
+            }
+        }
         return null;
     }
 
