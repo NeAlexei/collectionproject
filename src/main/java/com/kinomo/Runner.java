@@ -9,20 +9,16 @@ import com.kinomo.model.User;
 public class Runner {
 
     public static void main(String[] args) {
-        DAO dao = DAOFactory.get(DAOKeys.JSON); // эквивалентно DAO dao = new JsonDAO();
+//        DAO dao = DAOFactory.get(DAOKeys.JSON); // эквивалентно DAO dao = new JsonDAO();
 
-        dao.initialize();
-//        dao.getAll();
-
-        for (User people : dao.getAll())
-        {
-            System.out.println(people);
-        }
-
-        //...
+//        dao.initialize();
 
         JsonDAO js = new JsonDAO();
-        System.out.println(js.getById(9));
+
+        System.out.println("Запись по ID: " + js.getById(10) + "\n");
+
+        System.out.println("Весь список: " + js.getAll() + "\n");
+
 
     }
 

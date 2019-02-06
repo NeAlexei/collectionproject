@@ -47,8 +47,21 @@ public class JsonDAO implements DAO {
 
     @Override
     public List<User> getAll() {
+
+        for (User people : users)
+        {
+            System.out.println(people + "\n");
+        }
+
+//dao.getAll()
+
         return users;
     }
+
+
+
+
+
 
     @Override
     public Map<String, List<User>> getUnique() {
