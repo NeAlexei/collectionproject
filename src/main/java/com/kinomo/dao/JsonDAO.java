@@ -38,8 +38,8 @@ public class JsonDAO implements DAO {
 
         for (User specificUser : users) {
             if (id == specificUser.getId()) {
-                System.out.println("Name according to Id is: " + specificUser.getFirstname() + "\n" + "City according to Id is: " + specificUser.getCity());
-            return specificUser;
+                System.out.println("Name according to Id is: " + specificUser.getFirstname() + "\n" + "City according to Id is: " + specificUser.getCity() + "\n");
+            return null;
             }
         }
         return null;
@@ -50,25 +50,17 @@ public class JsonDAO implements DAO {
 
         for (User people : users)
         {
-            System.out.println(people + "\n");
+            System.out.println("Весь список: " + people);
         }
-
 //dao.getAll()
-
-        return users;
+        return null;
     }
-
-
-
-
-
 
     @Override
     public Map<String, List<User>> getUnique() {
         /*
 
         */
-
         return null;
     }
 }

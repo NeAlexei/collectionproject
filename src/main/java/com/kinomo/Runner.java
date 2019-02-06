@@ -15,10 +15,9 @@ public class Runner {
 
         JsonDAO js = new JsonDAO();
 
-        System.out.println("Запись по ID: " + js.getById(10) + "\n");
+        System.out.println(js.getById(10) + "\n");
 
-        System.out.println("Весь список: " + js.getAll() + "\n");
-
+        System.out.println(js.getAll());
 
     }
 
