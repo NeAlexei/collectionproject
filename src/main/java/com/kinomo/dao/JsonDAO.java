@@ -6,6 +6,7 @@ import com.kinomo.model.User;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -50,17 +51,20 @@ public class JsonDAO implements DAO {
 
         for (User people : users)
         {
-            System.out.println("Весь список: " + people);
+            System.out.println("All list of users: " + people);
         }
-//dao.getAll()
         return null;
     }
 
     @Override
-    public Map<String, List<User>> getUnique() {
-        /*
+    public Map<String, List<User>> getUnique(String city) {
 
-        */
+        Map<String, User> hm = new HashMap<>();
+
+        for (User uniq : users){
+            hm.put(uniq.getCity(), uniq);
+            System.out.println(hm);
+        }
         return null;
     }
 }

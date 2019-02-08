@@ -19,6 +19,7 @@ public class Runner {
 
         System.out.println(js.getAll());
 
+        System.out.println(js.getUnique("Detroit"));
     }
 
 }
